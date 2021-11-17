@@ -1,0 +1,9 @@
+<div>
+    <p cl>Hello!</p>
+    <app-counter [startFrom]="20" (count)="onCounterChanged($event)"></app-counter>
+    <button (click)="reset()">Очистить</button>
+    <ul>
+        <li *ngFor="let item of counterLog">{{item}}</li>
+    </ul>
+
+</div>

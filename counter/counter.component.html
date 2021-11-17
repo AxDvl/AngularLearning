@@ -1,0 +1,7 @@
+<h1>Counter</h1>
+
+<div>{{value}}</div>
+<div>
+    <button [disabled]="intID!==null" (click)="onStartAutoCount()">Start</button>
+    <button [disabled]="intID===null" (click)="onStopAutoCount()">Stop</button>
+</div>
